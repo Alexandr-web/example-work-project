@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Пример работы библиотеки Valval.js</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Регистрация</h1>
+    <form class="form flex fl-fd-cm" action="">
+      <label class="form__label" for="first-name">
+        <span class="form__label-title">Имя</span>
+        <input class="form__input" type="text" id="first-name" data-valval="firstName">
+        <svg class="form__svg" width="25" height="25">
+          <polyline class="form__svg-line" points="1,15 9,24 23,5" fill="none" stroke="#fff" stroke-width="2">
+        </svg>
+      </label>
+      <label class="form__label" for="last-name">
+        <span class="form__label-title">Фамилия</span>
+        <input class="form__input" type="text" id="last-name" data-valval="lastName">
+        <svg class="form__svg" width="25" height="25">
+          <polyline class="form__svg-line" points="1,15 9,24 23,5" fill="none" stroke="#fff" stroke-width="2">
+        </svg>
+      </label>
+      <label class="form__label" for="password">
+        <span class="form__label-title">Пароль</span>
+        <input class="form__input" type="password" id="password" data-valval="password">
+        <svg class="form__svg" width="25" height="25">
+          <polyline class="form__svg-line" points="1,15 9,24 23,5" fill="none" stroke="#fff" stroke-width="2">
+        </svg>
+      </label>
+      <label class="form__label" for="repeat-password">
+        <span class="form__label-title">Повторите пароль</span>
+        <input class="form__input" type="password" id="repeat-password" data-valval="repeatPassword">
+        <svg class="form__svg" width="25" height="25">
+          <polyline class="form__svg-line" points="1,15 9,24 23,5" fill="none" stroke="#fff" stroke-width="2">
+        </svg>
+      </label>
+      <label class="form__label" for="email">
+        <span class="form__label-title">Эл. почта</span>
+        <input class="form__input" type="text" id="email" data-valval="email">
+        <svg class="form__svg" width="25" height="25">
+          <polyline class="form__svg-line" points="1,15 9,24 23,5" fill="none" stroke="#fff" stroke-width="2">
+        </svg>
+      </label>
+      <input class="form__submit" type="submit" value="Зарегистрироваться">
+    </form>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+</html>
